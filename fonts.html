@@ -1,0 +1,128 @@
+<!-- Juan C Crespo Velazquez -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>font-family css property</title>
+  <meta aria-roledescription="Demo on how to use the CSS font-family property">
+
+  <!-- Include external css -->
+  <link rel="stylesheet" href="css/site_style.css">
+
+  <!-- ⏬ Include Bootstrap 5 ⏬-->
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Koulen&family=Radio+Canada:wght@300&family=Water+Brush&display=swap"
+    rel="stylesheet">
+
+  <!-- The style below wasn't properly displaying. It was originally located in the external CSS stylesheet (it still is) but for some reason wasn't displaying. I couldn't figure out why. -->
+  <style>
+    body {
+      background: #88087f27;
+      background: -webkit-linear-gradient(top left, #0866881f, #1155b5);
+      background: -moz-linear-gradient(top left, #0873885d, #1155b5);
+      background: linear-gradient(to bottom right, #085f8864, #1155b5);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      /* The result is a gradient background. */
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <!-- MENU BUTTON -->
+  <div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+      Menu
+    </button>
+
+    <ul class="dropdown-menu">
+      <li>
+        <h5 class="dropdown-header">Main Navigation</h5>
+      </li>
+
+      <li>
+        <a href="index.html" class="text-primary">🏠 Home Page
+        </a>
+      </li>
+
+      <li>
+        <a href="about.html" class="text-primary">ℹ️ About Page
+        </a>
+      </li>
+
+      <h5 class="dropdown-header">Tutorials</h5>
+
+      <li>
+        <a href="styling_text.html" class="text-success">How to style text &nbsp;
+        </a>
+      </li>
+
+      <li>
+        <a href="fonts.html" class="text-success">Fonts &nbsp;</a>
+      </li>
+
+      <!-- Bootstrap 5 Section -->
+      <li>
+        <a href="bootstrap5_buttons.html" class="text-success">Bootstrap Buttons &nbsp;</a>
+      </li>
+
+      <li>
+        <a href="alerts_bootstrap5.html" class="text-success">Bootstrap Alerts &nbsp;
+        </a>
+      </li>
+
+      <li>
+        <a href="bootstrap_gridTutorial.html" class="text-success"> Bootstrap Grid
+        </a>
+      </li>
+
+    </ul>
+  </div>
+
+  <!-- Header at the top of the page -->
+  <p class="welcome_text">How to use the font-family CSS property</p>
+
+
+
+  <article>
+    <!-- Describe what font-family is and why it's used. -->
+    The font-family CSS property specifies the typeface that is used to render the text.
+    The value of this property is a list of comma-separated font family names.
+    The order in the list indicates the priority of the fonts.
+    The browser uses the first font family in the list that is available.<br><br>
+  </article>
+  <h2 class="h2" style="font-size: 2.5em;">Example code</h2>
+
+  <div class="example">
+    <code>
+      &lt;p style=&quot;font-family: &#39;Water Brush&#39;, cursive;&quot;&gt;<br>&nbsp&nbsp&nbspstyled text<br>&lt;/p&gt;
+    </code>
+  </div>
+  <br>
+
+  <h2 class="h2" style="font-size: 2.5em;">Result</h2>
+<article>  <bold style="font-family: 'Water Brush', cursive; font-size: 2.5em;">styled text</bold></article>
+
+  <br><br>
+
+</body>
+
+<!-- This footer displays at the bottom left of the page in small font -->
+<footer>
+  CIS-221, Spring 2022. Copyright &copy; 2022 Juan C Crespo Velazquez.
+</footer>
+
+</html>

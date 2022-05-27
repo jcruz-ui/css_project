@@ -1,0 +1,128 @@
+<!-- Juan C Crespo Velazquez -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bootstrap 5 Buttons</title>
+  <meta aria-roledescription="Demo on how to use Bootstrap 5 buttons">
+
+  <!-- Include external css -->
+  <link rel="stylesheet" href="css/site_style.css">
+
+  <!-- ⏬ Include Bootstrap 5 ⏬-->
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Koulen&family=Radio+Canada:wght@300&family=Water+Brush&display=swap"
+    rel="stylesheet">
+
+  <!-- The style below wasn't properly displaying. It was originally located in the external CSS stylesheet (it still is) but for some reason it wasn't displaying & I couldn't figure out why. -->
+  <style>
+    /* Gradient background */
+    body {
+      background: #88087f27;
+      background: -webkit-linear-gradient(top left, #0866881f, #1155b5);
+      background: -moz-linear-gradient(top left, #0873885d, #1155b5);
+      background: linear-gradient(to bottom right, #085f8864, #1155b5);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- MENU BUTTON -->
+  <div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+      Menu
+    </button>
+
+    <ul class="dropdown-menu">
+      <li>
+        <h5 class="dropdown-header">Main Navigation</h5>
+      </li>
+
+      <li>
+        <a href="index.html" class="text-primary">🏠 Home Page
+        </a>
+      </li>
+
+      <li>
+        <a href="about.html" class="text-primary">ℹ️ About Page
+        </a>
+      </li>
+
+      <h5 class="dropdown-header">Tutorials</h5>
+
+      <li>
+        <a href="styling_text.html" class="text-success">How to style text &nbsp;
+        </a>
+      </li>
+
+      <li>
+        <a href="fonts.html" class="text-success">Fonts &nbsp;</a>
+      </li>
+
+      <!-- Bootstrap 5 Section -->
+      <li>
+        <a href="bootstrap5_buttons.html" class="text-success">Bootstrap Buttons &nbsp;</a>
+      </li>
+
+      <li>
+        <a href="alerts_bootstrap5.html" class="text-success">Bootstrap Alerts &nbsp;
+        </a>
+      </li>
+
+      <li>
+        <a href="bootstrap_gridTutorial.html" class="text-success"> Bootstrap Grid
+        </a>
+      </li>
+
+    </ul>
+  </div>
+
+  <!-- Header at the top of the page -->
+  <h1 class="welcome_text">Bootstrap 5 Buttons</h1>
+
+    <!-- Notifies visitor that Bootstrap doesn't work automatically without some installation -->
+    <div id="alerta">
+      <div class="alert alert-info" role="alert">
+        Make sure to use the proper <a id="cdn"
+          href="https://getbootstrap.com/docs/5.0/getting-started/introduction/">CDN</a> if you
+        want to try out the example.
+      </div>
+    </div>
+
+  <!-- Paragraph below the header -->
+  <article>
+    What are buttons used for?<br>
+    They are used to submit forms, to navigate to another page, or to perform an action.
+  </article>
+
+  <!-- Button to that activates the next section of the page -->
+  <div id="black_button">
+    <button type="button" class="btn btn-dark" onclick="document.getElementById('insert').innerHTML = '&lt;h2 class=&quot;h2&quot; style=&quot;font-size: 2.5em;&quot;&gt;Example code&lt;/h2&gt;&lt;div class=&quot;example&quot;&gt;&lt;code&gt;&amp;lt;button type=&quot;button&quot; class=&quot;btn btn-dark&quot;&amp;gt;&lt;br&gt;&nbsp;&nbsp;Click me to continue<br>&amp;lt;/button&amp;gt;&lt;/code&gt;&lt;/div&gt;&lt;br&gt;&lt;article&gt;As you can see, the button loaded the rest of the page.<br> This should give you a sense of what events are and perhaps&lt;br&gt;some ideas.<br><br>&lt;/article&gt;'">Click me to continue</button>
+  </div>
+  <br>
+  <br>
+
+  <div id="insert"></div>
+
+</body>
+
+<!-- This footer displays at the bottom left of the page in small font -->
+<footer>
+  CIS-221, Spring 2022. Copyright &copy; 2022 Juan C Crespo Velazquez.
+</footer>
+
+</html>
